@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sea Bird Digital</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- navbar -->
+     <!-- PC -->
+<header class="navbar">
+  <div class="nav-container">
+    <div class="nav-logo">
+      <img src="https://gojilabs.com/wp-content/uploads/2025/08/logo_2025-485x104.webp" alt="Logo">
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li class="has-dropdown">
+          <a href="#">Services</a>
+        </li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Clients</a></li>
+        <li><a href="#">Company</a></li>
+      </ul>
+    </nav>
+    <div class="nav-btn">
+      <a href="#" class="btn-call">Book a Call <span>➔</span></a>
+    </div>
+  </div>
+</header>
+<div class="services-dropdown">
+  <div class="dropdown-inner">
+    <a href="#">Graphics Design <span>➔</span></a>
+    <a href="#">App Development <span>➔</span></a>
+    <a href="#">Web Development <span>➔</span></a>
+    <a href="#">Web Design <span>➔</span></a>
+    <a href="#">SEO <span>➔</span></a>
+  </div>
+</div>
+<script>
+const servicesLink = document.querySelector(".has-dropdown");
+const dropdown = document.querySelector(".services-dropdown");
+const toggle = document.querySelector(".menu-toggle");
+const navMenu = document.querySelector(".nav-menu");
+servicesLink.addEventListener("click", (e) => {
+  e.stopPropagation();
+  dropdown.classList.toggle("active");
+});
+dropdown.addEventListener("click", (e) => {
+  e.stopPropagation();
+});
+document.addEventListener("click", () => {
+  dropdown.classList.remove("active");
+});
+</script>
+
+<!-- Mobile -->
+
+<div class="mobile-menu">
+  <a href="#" id="mobile-logo">
+    <img src="https://gojilabs.com/wp-content/uploads/2025/08/logo_2025-485x104.webp" alt="">
+  </a>
+  
+  <!-- Hamburger -->
+  <div id="mobile-hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <!-- Dropdown Menu -->
+  <div id="mobile-dropdown">
+    <ul id="mobile-menu-list">
+      <li class="mobile-menu-item">
+        <a href="#" class="mobile-menu-link" id="mobile-services-link">Services ▾</a>
+        <ul class="mobile-submenu" id="mobile-services-submenu">
+          <li class="mobile-submenu-item">Graphic Design </li>
+          <li class="mobile-submenu-item">App Development </li>
+          <li class="mobile-submenu-item">Web Development </li>
+          <li class="mobile-submenu-item">Web Designing </li>
+          <li class="mobile-submenu-item">SEO</li>
+        </ul>
+      </li>
+      <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Work</a></li>
+      <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Clients</a></li>
+      <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Company</a></li>
+      <li class="mobile-menu-item">
+        <a href="#" class="mobile-menu-button">Book a Call</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<script>
+// Select elements
+const mobileMenu = document.querySelector('.mobile-menu');
+const hamburger = document.getElementById('mobile-hamburger');
+const mservicesLink = document.getElementById('mobile-services-link');
+const servicesItem = mservicesLink.parentElement;
+
+// Toggle main mobile menu
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('open');
+  mobileMenu.classList.toggle('open');
+});
+
+// Toggle Services submenu
+mservicesLink.addEventListener('click', (e) => {
+  e.preventDefault();
+
+  // Toggle open class on the <li>
+  servicesItem.classList.toggle('open');
+
+  // Directly toggle display for submenu to override flex issues
+  const submenu = servicesItem.querySelector('.mobile-submenu');
+  if (submenu) {
+    if (submenu.style.display === 'block') {
+      submenu.style.display = 'none';
+    } else {
+      submenu.style.display = 'block';
+    }
+  }
+});
+</script>
+
+
+
+
+
+</body>
+</html>
