@@ -230,3 +230,158 @@
   transform: rotate(-45deg) translate(5px,-5px);
 }
 }
+
+/* Hero Section */
+ .hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 50px;
+    gap: 50px;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  .hero-left {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  .hero-left h1 {
+    font-size: 65px;
+  font-family: sans-serif;
+    line-height: 1.2;
+    color: #000;
+    font-weight: 600;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  .hero-left p {
+    font-size: medium;
+  font-family: sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin-bottom: 30px;
+    max-width: 550px;
+  }
+  .hero-left .btn-call {
+    display: inline-flex;
+  font-family: "Unbounded", sans-serif;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+    background: #000;
+    color: #fff;
+    font-size: medium;
+    font-weight: 400;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero-left .btn-call span {
+    display: inline-block;
+    transform: rotate(-30deg);
+    font-weight: 300;
+    font-size: large;
+  }
+  .hero-left .btn-call:hover {
+    background: red;
+  }
+  /* Right container */
+  .hero-right {
+    flex: 1;
+    min-width: 300px;
+  }
+  .hero-right video {
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+  }
+  @media (max-width: 991px) {
+    .hero {
+      flex-direction: column;
+      padding: 50px 20px;
+    }
+    .hero-left h1 {
+      font-size: 36px;
+    }
+    .hero-left p {
+      font-size: 16px;
+    }
+  }
+
+  /* Marquee */
+.marquee-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 30px 0;
+  padding-bottom: 50px;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 60px;
+  white-space: nowrap;
+}
+
+.marquee-track img {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+  filter: grayscale(100%);
+}
+
+/* Counting Contaienr */
+.counting-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 100px 20px;
+    gap: 20px;
+    background-color: #000;
+}
+.counting-box{
+    height: 200px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.first-counting-box{
+    border-right: 1px solid white;
+}
+.counting-box h2{
+    font-size: 80px;
+    color: white;
+    font-weight: 300;
+    text-align: center;
+      font-family:  sans-serif;
+
+}
+.counting-box p{
+    font-size: medium;
+    color: gray;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+@media(max-width:600px){
+ .counting-box h2{
+    font-size: 80px;
+}   
+
+.first-counting-box{
+    border-right: none;
+}
+.counting-container {
+    padding: 50px 20px;
+    gap: 0px;
+}
+}

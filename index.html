@@ -61,20 +61,15 @@ document.addEventListener("click", () => {
 </script>
 
 <!-- Mobile -->
-
 <div class="mobile-menu">
   <a href="#" id="mobile-logo">
     <img src="https://gojilabs.com/wp-content/uploads/2025/08/logo_2025-485x104.webp" alt="">
   </a>
-  
-  <!-- Hamburger -->
   <div id="mobile-hamburger">
     <span></span>
     <span></span>
     <span></span>
   </div>
-
-  <!-- Dropdown Menu -->
   <div id="mobile-dropdown">
     <ul id="mobile-menu-list">
       <li class="mobile-menu-item">
@@ -98,26 +93,17 @@ document.addEventListener("click", () => {
 </div>
 
 <script>
-// Select elements
 const mobileMenu = document.querySelector('.mobile-menu');
 const hamburger = document.getElementById('mobile-hamburger');
 const mservicesLink = document.getElementById('mobile-services-link');
 const servicesItem = mservicesLink.parentElement;
-
-// Toggle main mobile menu
 hamburger.addEventListener('click', () => {
   hamburger.classList.toggle('open');
   mobileMenu.classList.toggle('open');
 });
-
-// Toggle Services submenu
 mservicesLink.addEventListener('click', (e) => {
   e.preventDefault();
-
-  // Toggle open class on the <li>
   servicesItem.classList.toggle('open');
-
-  // Directly toggle display for submenu to override flex issues
   const submenu = servicesItem.querySelector('.mobile-submenu');
   if (submenu) {
     if (submenu.style.display === 'block') {
@@ -129,8 +115,62 @@ mservicesLink.addEventListener('click', (e) => {
 });
 </script>
 
+<!-- Hero Section -->
 
+<section class="hero">
+  <div class="hero-left">
+    <h1>A Digital Product<br>Agency That Builds it Right<span style="color: red;">.</span></h1>
+    <p>We help our clients turn complex challenges into intuitive products through strategy, design, and development. We’ve successfully launched 400+ products and helped raise over $1B in funding and counting.</p>
+    <a href="#" class="btn-call">Book a Call <span>➔</span></a>
+  </div>
+  <div class="hero-right">
+    <video src="https://gojilabs.com/wp-content/uploads/2025/08/HeroPage_Animation_5.mp4" autoplay muted loop playsinline></video>
+  </div>
+</section>
 
+<!-- Marquee -->
+<div class="marquee-container">
+  <div class="marquee-track" id="marquee-track">
+    <img src="https://gojilabs.com/wp-content/uploads/2025/09/logo-wwf-grey.webp" alt="Logo 1">
+    <img src="https://gojilabs.com/wp-content/uploads/2025/09/logo-animoca-grey.webp" alt="Logo 2">
+    <img src="https://gojilabs.com/wp-content/uploads/2025/09/logo-prediction-strike-grey.webp" alt="Logo 3">
+    <img src="https://gojilabs.com/wp-content/uploads/2025/09/logo-who-grey.webp" alt="Logo 4">
+    <img src="https://gojilabs.com/wp-content/uploads/2025/09/logo-mural-grey.webp" alt="Logo 5">
+    <img src="https://gojilabs.com/wp-content/uploads/2025/09/logo-valara-grey.webp" alt="Logo 6">
+  </div>
+</div>
+
+<script>
+const track = document.getElementById('marquee-track');
+track.innerHTML += track.innerHTML;
+let offset = 0;
+const speed = 1;
+function animate() {
+  offset -= speed;
+  if (offset <= -track.scrollWidth / 2) {
+    offset = 0;
+  }
+  track.style.transform = `translateX(${offset}px)`;
+  requestAnimationFrame(animate);
+}
+animate();
+</script>
+
+<!-- Numbering Section -->
+ <div class="counting-container">
+    <div class="counting-box first-counting-box">
+        <h2>400<span>+</span></h2>
+        <p>Product Launched</p>
+    </div>
+    <div class="counting-box">
+        <h2>10<span>M+</span></h2>
+        <p>Users Supported</p>
+    </div>
+    <div class="counting-box">
+        <h2><span>$</span>1<span>B+</span></h2>
+        <p>Raised By Our Clients </p>
+    </div>
+ </div>
 
 
 </body>
