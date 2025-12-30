@@ -3,20 +3,20 @@ body{
 }
 body {
     --Gradient: linear-gradient(76deg, #8b8b89, #dbdbd9);
-    --Stroke-gradient: linear-gradient(180deg, rgba(75, 75, 75, 0), #4b4b4b 49.04%, rgba(75, 75, 75, 0));
-    --Stroke-gradient-vertical: linear-gradient(270deg, rgba(75, 75, 75, 0), #4b4b4b 49.04%, rgba(75, 75, 75, 0));
+    --Stroke-gradient: linear-gradient(180deg, rgba(75, 75, 75, 0), #fff 49.04%, rgba(75, 75, 75, 0));
+    --Stroke-gradient-vertical: linear-gradient(270deg, rgba(75, 75, 75, 0), #fff 49.04%, rgba(75, 75, 75, 0));
     --base-transition: all .3s ease-in-out;
     --color-transition: color .3s, background .3s, border-color .3s;
     --Buttons-Primary-primary-content-disable: #9e9c9c;
-    --Buttons-Secondary-secondary-content-hover: #e8465e;
+    --Buttons-Secondary-secondary-content-hover: #21d0b3;
     --Strokes-stroke-secondary: #e3e1e1;
-    --wp--preset--color--gojiberry-300: #f1909e;
+    --wp--preset--color--gojiberry-300: #21d0b3;
     --Text-text-disabled: #827f7f;
     --States-Error-Error-25: #faeeee;
     --Strokes-stroke-error: #ecb9ba;
-    --States-Error-Error-75: #e84649;
+    --States-Error-Error-75: #21d0b3;
     --button--arrow--white: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="%23fff" d="M18.75 6v9.75a.75.75 0 1 1-1.5 0V7.81L6.53 18.53a.75.75 0 1 1-1.06-1.06L16.19 6.75H8.25a.75.75 0 0 1 0-1.5H18a.75.75 0 0 1 .75.75"/></svg>');
-    --button--arrow--gojiberry: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="%23e8465e" d="M18.75 6v9.75a.75.75 0 1 1-1.5 0V7.81L6.53 18.53a.75.75 0 1 1-1.06-1.06L16.19 6.75H8.25a.75.75 0 0 1 0-1.5H18a.75.75 0 0 1 .75.75"/></svg>');
+    --button--arrow--gojiberry: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="%2321d0b3" d="M18.75 6v9.75a.75.75 0 1 1-1.5 0V7.81L6.53 18.53a.75.75 0 1 1-1.06-1.06L16.19 6.75H8.25a.75.75 0 0 1 0-1.5H18a.75.75 0 0 1 .75.75"/></svg>');
     --button--arrow--grey: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="%239e9c9c" d="M18.75 6v9.75a.75.75 0 1 1-1.5 0V7.81L6.53 18.53a.75.75 0 1 1-1.06-1.06L16.19 6.75H8.25a.75.75 0 0 1 0-1.5H18a.75.75 0 0 1 .75.75"/></svg>');
     --button--arrow--black: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path fill="%23000" d="M18.75 6v9.75a.75.75 0 1 1-1.5 0V7.81L6.53 18.53a.75.75 0 1 1-1.06-1.06L16.19 6.75H8.25a.75.75 0 0 1 0-1.5H18a.75.75 0 0 1 .75.75"/></svg>');
     --icon--plus--black: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='24' fill='none' viewBox='0 0 25 24'%3E%3Cpath fill='%23000' d='M20 12a.624.624 0 0 1-.625.625h-6.25v6.25a.624.624 0 1 1-1.25 0v-6.25h-6.25a.625.625 0 1 1 0-1.25h6.25v-6.25a.625.625 0 1 1 1.25 0v6.25h6.25A.624.624 0 0 1 20 12'/%3E%3C/svg%3E");
@@ -77,11 +77,11 @@ body .has-gojiberry-background-color {
 
 .has-inline-color:not(.wp-block-separator).has-gradient-50-color,
 .has-text-color:not(.wp-block-separator).has-gradient-50-color {
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: var(--Gradient);
-    -webkit-text-fill-color: transparent;
-    color: transparent
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    /* background-image: var(--Gradient); */
+    /* -webkit-text-fill-color: transparent; */
+    color: white
 }
 
 .has-inline-color:not(.wp-block-separator).has-gradient-100-color,
@@ -917,7 +917,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-button-next:hover:after {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28"><path fill="%23da3750" d="m24.244 14.62-7.875 7.874a.876.876 0 0 1-1.238-1.238l6.382-6.381H4.375a.875.875 0 0 1 0-1.75h17.138l-6.382-6.38a.876.876 0 0 1 1.238-1.24l7.875 7.876a.876.876 0 0 1 0 1.238"/></svg>')
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28"><path fill="%2321d0b3" d="m24.244 14.62-7.875 7.874a.876.876 0 0 1-1.238-1.238l6.382-6.381H4.375a.875.875 0 0 1 0-1.75h17.138l-6.382-6.38a.876.876 0 0 1 1.238-1.24l7.875 7.876a.876.876 0 0 1 0 1.238"/></svg>')
 }
 
 .swiper-button-prev:after {
@@ -925,7 +925,7 @@ button.swiper-pagination-bullet {
 }
 
 .swiper-button-prev:hover:after {
-    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28"><path fill="%23da3750" d="M24.5 14a.875.875 0 0 1-.875.875H6.487l6.382 6.38a.875.875 0 1 1-1.238 1.24l-7.875-7.876a.876.876 0 0 1 0-1.238l7.875-7.875a.876.876 0 0 1 1.238 1.238l-6.382 6.381h17.138A.875.875 0 0 1 24.5 14"/></svg>')
+    background-image: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="none" viewBox="0 0 28 28"><path fill="%2321d0b3" d="M24.5 14a.875.875 0 0 1-.875.875H6.487l6.382 6.38a.875.875 0 1 1-1.238 1.24l-7.875-7.876a.876.876 0 0 1 0-1.238l7.875-7.875a.876.876 0 0 1 1.238 1.238l-6.382 6.381h17.138A.875.875 0 0 1 24.5 14"/></svg>')
 }
 
 .owl-carousel {
@@ -1752,16 +1752,16 @@ footer.wp-block-template-part .wp-block-social-links .wp-block-social-link-ancho
 }
 
 .countup {
-    -webkit-background-clip: text;
-    background-clip: text;
-    background-image: var(--Gradient);
-    color: var(--wp--preset--color--gradient-50) !important;
+    /* -webkit-background-clip: text; */
+    /* background-clip: text; */
+    /* background-image: var(--Gradient); */
+    /* color: var(--wp--preset--color--gradient-50) !important; */
     font-family: var(--wp--preset--font-family--clash-display) !important;
     font-size: var(--wp--preset--font-size--huge) !important;
     font-weight: 500;
     line-height: 1.2;
-    -webkit-text-fill-color: transparent;
-    color: transparent;
+    /* -webkit-text-fill-color: transparent; */
+    color: white !important;
     text-align: center
 }
 
@@ -2090,7 +2090,7 @@ footer .wp-block-group.has-border-color .wp-block-buttons.is-style-full-row {
 }
 
 footer .wp-block-group.has-border-color .wp-block-buttons.is-style-full-row .wp-block-button__link {
-    border-color: var(--wp--preset--color--grey-700);
+    border-color: white;
     font-weight: 500;
     padding: 20px var(--wp--preset--spacing--70)
 }
@@ -3381,7 +3381,7 @@ nav.service-filter .wp-block-navigation__responsive-container .wp-block-navigati
 }
 
 .is-style-red-numbers li:before {
-    color: #da3750;
+    color: #21d0b3;
     content: counter(redListCounter, decimal-leading-zero) ". ";
     left: 0;
     position: absolute;
@@ -3947,8 +3947,8 @@ nav.service-filter .wp-block-navigation__responsive-container .wp-block-navigati
 }
 
 .portfolio-card--premium .portfolio-card__keys {
-    background: var(--wp--preset--color--grey-700);
-    border-top: 1px solid var(--wp--preset--color--grey-700);
+    background: white;
+    border-top: 1px solid white;
     gap: 1px
 }
 
@@ -7201,16 +7201,16 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
     font-family:  'Clash Display Variable';
     margin: 0;
     padding: 10px;
-    border: 3px solid black;
-    background-color: #000;
+    border: 3px solid #203a55;
+    background-color: #203a55;
     color: white;
     font-weight: 500;
     text-decoration: none;
     transition: all 0.3s;
 }
 .our-services-heading-container a:hover{
-    background-color: #da3750;
-    border: 3px solid #da3750;
+    background-color: #21d0b3;
+    border: 3px solid #21d0b3;
 }
 @media(max-width:600px){
  .our-services-heading-container h2{
@@ -7249,7 +7249,7 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
     content: "";
     position: absolute;
     inset: 0;
-    background: #0a0a0a;
+    background: #203a55;
     transform: translateY(100%);
     transition: transform 0.6s cubic-bezier(.4,0,.2,1);
     z-index: 0;
@@ -7288,7 +7288,7 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
     font-size: 38px;
     font-weight: 600;
     margin: 0 0 16px;
-    color: #111;
+    color: #203a55;
     letter-spacing: -1px;
 }
 
@@ -7337,7 +7337,7 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
     filter: brightness(100);
     background-position: center;
     z-index: 2;
-    opacity: 0.7;
+    opacity: 1;
     transition: transform 0.4s ease;
 }
 
