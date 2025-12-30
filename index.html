@@ -3203,6 +3203,7 @@ mservicesLink.addEventListener('click', (e) => {
 .marquee-track {
   display: flex;
   flex-wrap: nowrap;
+  will-change: transform;
 }
 
 .marquee-track img {
@@ -3234,21 +3235,41 @@ mservicesLink.addEventListener('click', (e) => {
 
 <script>
 const track = document.getElementById('marquee-track');
-const trackWidth = Array.from(track.children).reduce((acc, img) => acc + img.offsetWidth + parseInt(getComputedStyle(img).marginRight), 0);
-const cloneCount = 2; // duplicate 2 times for smooth loop
-for(let i=0; i<cloneCount; i++){
-  track.innerHTML += track.innerHTML;
-}
-let x = 0;
 const speed = 1;
-function animate() {
-  x -= speed;
-  if(x <= -trackWidth) x = 0;
-  track.style.transform = `translateX(${x}px)`;
-  requestAnimationFrame(animate);
+let x = 0;
+
+// Wait for all images to load
+const images = Array.from(track.querySelectorAll('img'));
+let imagesLoaded = 0;
+images.forEach(img => {
+  if(img.complete) imagesLoaded++;
+  else img.onload = () => {
+    imagesLoaded++;
+    if(imagesLoaded === images.length) initMarquee();
+  };
+});
+
+if(imagesLoaded === images.length) initMarquee();
+
+function initMarquee() {
+  // Calculate total width of all images
+  const trackWidth = Array.from(track.children).reduce((acc, img) => acc + img.offsetWidth + parseInt(getComputedStyle(img).marginRight), 0);
+
+  // Clone content until it's at least twice the container width for smooth loop
+  while(track.scrollWidth < trackWidth * 2) {
+    track.innerHTML += track.innerHTML;
+  }
+
+  function animate() {
+    x -= speed;
+    if(Math.abs(x) >= track.scrollWidth / 2) x = 0; // reset after half width
+    track.style.transform = `translateX(${x}px)`;
+    requestAnimationFrame(animate);
+  }
+  animate();
 }
-animate();
 </script>
+
 </div>
 
                 <div class="wp-block-group alignfull is-style-page-section-dark is-layout-flow wp-block-group-is-layout-flow" style="margin-top:0;margin-bottom:0">
