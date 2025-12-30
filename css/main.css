@@ -7176,3 +7176,232 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
 
      }
 }
+
+
+
+/* Our Services */
+.our-services-heading-container{
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+}
+.our-services-heading-container h2{
+    font-size: 50px;
+    text-align: center;
+    font-family:  'Clash Display Variable';
+    margin: 0;
+    padding: 0;
+}
+.our-services-heading-container a{
+    font-size: large;
+    text-align: center;
+    font-family:  'Clash Display Variable';
+    margin: 0;
+    padding: 10px;
+    border: 3px solid black;
+    background-color: #000;
+    color: white;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+.our-services-heading-container a:hover{
+    background-color: #da3750;
+    border: 3px solid #da3750;
+}
+@media(max-width:600px){
+ .our-services-heading-container h2{
+    font-weight: 600;
+    font-size: 25px;
+}   
+.our-services-heading-container a {
+    font-size: medium;
+    padding: 5px 10px;
+}
+}
+.our-services-main-container {
+    max-width: 1200px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.our-service-card {
+    position: relative;
+    min-height: 280px;
+    padding: 50px 40px 50px 50px;
+    background: #f4f4f4;
+    overflow: hidden;
+    border: 1px solid #eee;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    transition: transform 0.4s ease;
+}
+
+.our-service-card:hover {
+    transform: translateY(-6px);
+}
+
+.our-service-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: #0a0a0a;
+    transform: translateY(100%);
+    transition: transform 0.6s cubic-bezier(.4,0,.2,1);
+    z-index: 0;
+}
+
+.our-service-card:hover::before {
+    transform: translateY(0);
+}
+
+.our-service-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 4px;
+    height: 0%;
+    background: linear-gradient(to top, #00ffd5, #00aaff);
+    transition: height 0.6s ease;
+    z-index: 1;
+}
+
+.our-service-card:hover::after {
+    height: 100%;
+}
+
+/* Content */
+.our-service-card h3,
+.our-service-card p,
+.our-service-card .card-index {
+    position: relative;
+    z-index: 2;
+    transition: all 0.4s ease;
+}
+
+.our-service-card h3 {
+    font-size: 38px;
+    font-weight: 600;
+    margin: 0 0 16px;
+    color: #111;
+    letter-spacing: -1px;
+}
+
+.our-service-card p {
+    max-width: 520px;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #444;
+}
+
+.card-index {
+    position: absolute !important;
+    top: 20px;
+    right: 20px;
+    font-size: 100px;
+    font-weight: 700;
+    color: rgba(0,0,0,0.1);
+    pointer-events: none;
+    transition: opacity 0.4s ease;
+}
+
+/* Hover effects */
+.our-service-card:hover h3 {
+    color: #fff;
+    transform: translateX(10px);
+}
+
+.our-service-card:hover p {
+    color: #cfcfcf;
+    transform: translateX(10px);
+}
+
+.our-service-card:hover .card-index {
+    opacity: 0; /* hide the number */
+}
+
+/* Image container */
+.card-image {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%) scale(0);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    filter: brightness(100);
+    background-position: center;
+    z-index: 2;
+    opacity: 0.7;
+    transition: transform 0.4s ease;
+}
+
+.our-service-card:hover .card-image {
+    transform: translateY(-50%) scale(1);
+}
+
+/* Assign images from data-image attribute */
+.our-service-card .card-image {
+    background-image: url(attr(data-image url));
+}
+@media (max-width: 600px) {
+    .our-service-card {
+        min-height: 300px;
+        padding: 30px 20px;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .card-index {
+        font-size: 80px; 
+        margin-bottom: 15px;
+    }
+
+    /* Heading and paragraph start lower */
+    .our-service-card h3,
+    .our-service-card p {
+        position: relative;
+        top: 100px; /* initial position */
+        transition: top 0.4s ease, color 0.4s ease;
+    }
+
+    .our-service-card h3 {
+        font-size: 30px;
+    }
+
+    .card-image {
+        position: relative;
+        top: auto;
+        right: auto;
+        width: 100%;
+        height: 150px;
+        transform: scale(0);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-top: 10px;
+        opacity: 0.9;
+        transition: transform 0.4s ease, opacity 0.4s ease;
+    }
+
+    /* Hover effects */
+    .our-service-card:hover h3,
+    .our-service-card:hover p {
+        top: 0px; /* slide up on hover */
+        color: #fff;
+    }
+
+    .our-service-card:hover .card-image {
+        transform: scale(1); /* show image */
+    }
+}
+
+
+
+
