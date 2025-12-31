@@ -2090,7 +2090,7 @@ footer .wp-block-group.has-border-color .wp-block-buttons.is-style-full-row {
 }
 
 footer .wp-block-group.has-border-color .wp-block-buttons.is-style-full-row .wp-block-button__link {
-    border-color: white;
+    border-color: white !important;
     font-weight: 500;
     padding: 20px var(--wp--preset--spacing--70)
 }
@@ -7237,7 +7237,7 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
     background: #f4f4f4;
     overflow: hidden;
     border: 1px solid #eee;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    box-shadow: 1px 1px 5px gray;
     transition: transform 0.4s ease;
 }
 

@@ -2829,30 +2829,30 @@
 <header class="navbar">
   <div class="nav-container">
     <div class="nav-logo">
-      <img src="images/logo.png" alt="Logo">
+      <a href="index.html"> <img src="images/logo.png" alt="Logo"></a>
     </div>
     <nav class="nav-menu">
       <ul>
         <li class="has-dropdown">
-          <a href="#">Services</a>
+          <a href="#">Services ▾</a>
         </li>
-        <li><a href="#">Work</a></li>
-        <li><a href="#">Clients</a></li>
-        <li><a href="#">Company</a></li>
+        <li><a href="work.html">Work</a></li>
+        <li><a href="clients.html">Clients</a></li>
+        <li><a href="company.html">Company</a></li>
       </ul>
     </nav>
     <div class="nav-btn">
-      <a href="#" class="btn-call">Book a Call <span>➔</span></a>
+      <a href="get-started.html" class="btn-call">Book a Call <span>➔</span></a>
     </div>
   </div>
 </header>
 <div class="services-dropdown">
   <div class="dropdown-inner">
-    <a href="#">Graphics Design <span>➔</span></a>
-    <a href="#">App Development <span>➔</span></a>
-    <a href="#">Web Development <span>➔</span></a>
-    <a href="#">Web Design <span>➔</span></a>
-    <a href="#">SEO <span>➔</span></a>
+    <a href="graphic-designing.html">Graphics Design <span>➔</span></a>
+    <a href="app-development.html">App Development <span>➔</span></a>
+    <a href="web-development.html">Web Development <span>➔</span></a>
+    <a href="web-designing.html">Web Design <span>➔</span></a>
+    <a href="seo.html">SEO <span>➔</span></a>
   </div>
 </div>
 <script>
@@ -2874,7 +2874,7 @@ document.addEventListener("click", () => {
 
 <!-- Mobile -->
 <div class="mobile-menu">
-  <a href="#" id="mobile-logo">
+  <a href="index.html" id="mobile-logo">
     <img src="images/logo.png" alt="">
   </a>
   <div id="mobile-hamburger">
@@ -2887,18 +2887,18 @@ document.addEventListener("click", () => {
       <li class="mobile-menu-item">
         <a href="#" class="mobile-menu-link" id="mobile-services-link">Services ▾</a>
         <ul class="mobile-submenu" id="mobile-services-submenu">
-          <li class="mobile-submenu-item">Graphic Design </li>
-          <li class="mobile-submenu-item">App Development </li>
-          <li class="mobile-submenu-item">Web Development </li>
-          <li class="mobile-submenu-item">Web Designing </li>
-          <li class="mobile-submenu-item">SEO</li>
+          <li class="mobile-submenu-item"><a href="graphic-designing.html" style="text-decoration: none;"> Graphic Design</a> </li>
+          <li class="mobile-submenu-item"><a href="app-development.html" style="text-decoration: none;"> App Development </a></li>
+          <li class="mobile-submenu-item"><a href="web-development.html" style="text-decoration: none;"> Web Development </a></li>
+          <li class="mobile-submenu-item"><a href="web-designing.html" style="text-decoration: none;"> Web Designing </a></li>
+          <li class="mobile-submenu-item"><a href="seo.html" style="text-decoration: none;"> SEO</a></li>
         </ul>
       </li>
-      <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Work</a></li>
-      <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Clients</a></li>
-      <li class="mobile-menu-item"><a href="#" class="mobile-menu-link">Company</a></li>
+      <li class="mobile-menu-item"><a href="work.html" class="mobile-menu-link">Work</a></li>
+      <li class="mobile-menu-item"><a href="clients.html" class="mobile-menu-link">Clients</a></li>
+      <li class="mobile-menu-item"><a href="company.html" class="mobile-menu-link">Company</a></li>
       <li class="mobile-menu-item">
-        <a href="#" class="mobile-menu-button">Book a Call</a>
+        <a href="get-started.html" class="mobile-menu-button">Book a Call</a>
       </li>
     </ul>
   </div>
@@ -2932,7 +2932,7 @@ mservicesLink.addEventListener('click', (e) => {
   background: #fff;
   font-family: "Unbounded", sans-serif;
   padding: 10px 0;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid gainsboro;
 }
 .nav-container {
   max-width: 1400px;
@@ -2992,6 +2992,9 @@ mservicesLink.addEventListener('click', (e) => {
   border-top: 1px solid #fff;
   display: none;
   margin: 0;
+  position: absolute;
+  top: 100px;
+  z-index: 1;
 }
 .services-dropdown.active {
   display: block;
@@ -3282,108 +3285,68 @@ function initMarquee() {
   </style>
                 </div>
 
-            <section class="cards-section">
-  <div class="card">
-    <h3>Graphics Design</h3>
-    <p>Logo, banners, brochures, and creative visuals to make your brand stand out.</p>
-  </div>
-  <div class="card">
-    <h3>Web Development</h3>
-    <p>Responsive websites, e-commerce platforms, and custom web applications.</p>
-  </div>
-  <div class="card">
-    <h3>App Development</h3>
-    <p>Mobile apps for iOS & Android with smooth user experience and performance.</p>
-  </div>
-  <div class="card">
-    <h3>SEO Optimization</h3>
-    <p>Boost organic traffic, improve rankings, and enhance online visibility.</p>
-  </div>
-  <div class="card">
-    <h3>Web Design</h3>
-    <p>User-friendly and visually appealing interfaces for websites and apps.</p>
-  </div>
-  <div class="card">
-    <h3>Digital Marketing</h3>
-    <p>Social media campaigns, email marketing, and growth strategies.</p>
-  </div>
-  <div class="card">
-    <h3>Branding</h3>
-    <p>Create a unique identity, brand guidelines, and visual language.</p>
-  </div>
-  <div class="card">
-    <h3>Social Media Management</h3>
-    <p>Engaging content, strategy, and growth across social platforms.</p>
-  </div>
-</section>
+            
 
-<style>
-.cards-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
-  padding: 20px;
-}
+                 <div class="our-services-heading-container">
+                    <h2>Our Services</h2>
+                    <a href="all-services.html">See All Services</a>
+                </div>
+                <div class="our-services-main-container">
+    <div class="our-service-card" data-image="images/graphics-designing.png">
+        <h3>Graphics Designing</h3>
+        <p>
+            We craft visually compelling designs that communicate your brand,
+            engage users, and convert attention into action.
+        </p>
+        <span class="card-index">01</span>
+        <div class="card-image"></div>
+    </div>
 
-/* Card styling */
-.card {
-  position: relative;
-  width: 98%;
-  max-width: 600px;
-  background-color: #f5f5f5;
-  padding: 20px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: color 0.4s ease;
-}
+    <div class="our-service-card" data-image="images/web-development.png">
+        <h3>Web Development</h3>
+        <p>
+            Build responsive and efficient websites that deliver seamless user experiences.
+        </p>
+        <span class="card-index">02</span>
+        <div class="card-image"></div>
+    </div>
 
-/* Hover background fill from bottom */
-.card::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 0%;
-  background-color: #203a55;
-  z-index: 0;
-  transition: height 0.4s ease;
-}
+    <div class="our-service-card" data-image="images/app-development.png">
+        <h3>App Development</h3>
+        <p>
+            Create mobile applications that are fast, intuitive, and visually appealing.
+        </p>
+        <span class="card-index">03</span>
+        <div class="card-image"></div>
+    </div>
 
-/* Bring text above overlay */
-.card h3, .card p {
-  position: relative;
-  z-index: 1;
-  transition: color 0.4s ease;
-}
+    <div class="our-service-card" data-image="images/web-designing.png">
+        <h3>Web Designing</h3>
+        <p>
+            Design engaging user interfaces that enhance user interaction and satisfaction.
+        </p>
+        <span class="card-index">04</span>
+        <div class="card-image"></div>
+    </div>
 
-/* Hover effect */
-.card:hover::before {
-  height: 100%;
-}
-.card h3{
-    font-size: 25px !important;
-}
-.card:hover h3,
-.card:hover p {
-  color: #fff;
-}
-
-/* Desktop: 2 cards per row */
-@media (min-width: 769px) {
-  .card {
-    flex: 0 0 calc(50% - 20px);
-  }
-}
-
-/* Mobile: 1 card per row */
-@media (max-width: 768px) {
-  .card {
-    flex: 0 0 100%;
-  }
-}
-</style>
+    <div class="our-service-card" data-image="images/seo.png">
+        <h3>SEO</h3>
+        <p>
+            Optimize your content and website to rank higher on search engines effectively.
+        </p>
+        <span class="card-index">05</span>
+        <div class="card-image"></div>
+    </div>
+</div>
+<script>
+document.querySelectorAll('.our-service-card').forEach(card => {
+    const imgDiv = card.querySelector('.card-image');
+    const imgUrl = card.getAttribute('data-image');
+    if (imgUrl) {
+        imgDiv.style.backgroundImage = `url('${imgUrl}')`;
+    }
+});
+</script>
 
 
         
@@ -3468,7 +3431,7 @@ function initMarquee() {
 
                         <div class="wp-block-buttons is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-e17dbd8d wp-block-buttons-is-layout-flex" style="margin-top:var(--wp--preset--spacing--big-md)">
                             <div class="wp-block-button is-style-fill">
-                                <a class="wp-block-button__link wp-element-button" href="#">Book a Call</a>
+                                <a class="wp-block-button__link wp-element-button" href="get-started.html">Book a Call</a>
                             </div>
                         </div>
                     </div>
@@ -3480,38 +3443,50 @@ function initMarquee() {
             </div>
         </main>
 
-        <footer data-wpr-lazyrender="1" class="wp-block-template-part">
+       <footer data-wpr-lazyrender="1" class="wp-block-template-part">
             <div class="wp-block-group is-style-page-section-dark has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:0;margin-bottom:0">
                 <div class="wp-block-group has-border-color is-layout-flow wp-block-group-is-layout-flow" style="border-color:#514f4f;border-width:1px">
                     <div class="wp-block-buttons is-style-full-row is-content-justification-space-between is-layout-flex wp-container-core-buttons-is-layout-fa7a960d wp-block-buttons-is-layout-flex" style="margin-top:-1px">
                         <div class="wp-block-button is-style-secondary">
-                            <a class="wp-block-button__link wp-element-button" href="#">App & Software Development</a>
+                            <a class="wp-block-button__link wp-element-button" href="index.html">Home</a>
                         </div>
 
                         <div class="wp-block-button is-style-secondary keep-lettercase">
-                            <a class="wp-block-button__link wp-element-button" href="#">UI/UX Design</a>
+                            <a class="wp-block-button__link wp-element-button" href="company.html">Company</a>
                         </div>
 
                         <div class="wp-block-button is-style-secondary">
-                            <a class="wp-block-button__link wp-element-button" href="#">Product Strategy Consulting</a>
+                            <a class="wp-block-button__link wp-element-button" href="clients.html">Clients</a>
                         </div>
                     </div>
 
                     <div class="wp-block-buttons is-style-full-row is-content-justification-space-between is-layout-flex wp-container-core-buttons-is-layout-b585a4aa wp-block-buttons-is-layout-flex">
                         <div class="wp-block-button is-style-secondary">
-                            <a class="wp-block-button__link wp-element-button" href="#">Press</a>
+                            <a class="wp-block-button__link wp-element-button" href="work.html">Work</a>
                         </div>
 
                         <div class="wp-block-button is-style-secondary keep-lettercase">
-                            <a class="wp-block-button__link wp-element-button" href="#">FAQ</a>
+                            <a class="wp-block-button__link wp-element-button" href="get-started.html">Get Started</a>
                         </div>
 
                         <div class="wp-block-button is-style-secondary">
-                            <a class="wp-block-button__link wp-element-button" href="#">Templates</a>
+                            <a class="wp-block-button__link wp-element-button" href="app-development.html">App Development Services</a>
                         </div>
 
                         <div class="wp-block-button is-style-secondary keep-lettercase">
-                            <a class="wp-block-button__link wp-element-button" href="#">Locations</a>
+                            <a class="wp-block-button__link wp-element-button" href="web-development.html">Web Development Services</a>
+                        </div>
+
+                        <div class="wp-block-button is-style-secondary keep-lettercase">
+                            <a class="wp-block-button__link wp-element-button" href="graphic-designing.html">Graphic Designing Services</a>
+                        </div>
+
+                        <div class="wp-block-button is-style-secondary keep-lettercase">
+                            <a class="wp-block-button__link wp-element-button" href="web-designing.html">Web Designing Services</a>
+                        </div>
+
+                        <div class="wp-block-button is-style-secondary keep-lettercase">
+                            <a class="wp-block-button__link wp-element-button" href="seo.html">SEO Services</a>
                         </div>
                     </div>
                 </div>
@@ -3519,12 +3494,7 @@ function initMarquee() {
                 <div class="wp-block-group has-global-padding is-layout-constrained wp-block-group-is-layout-constrained" style="margin-top:var(--wp--preset--spacing--big-md)">
                     <div class="wp-block-group footer-bottom-row is-content-justification-space-between is-nowrap is-layout-flex wp-container-core-group-is-layout-cb46ffcb wp-block-group-is-layout-flex">
                         <div class="wp-block-group is-nowrap is-layout-flex wp-container-core-group-is-layout-c1740a5a wp-block-group-is-layout-flex">
-                            <div class="wp-block-group footer-hi-animation is-nowrap is-layout-flex wp-container-core-group-is-layout-6c531013 wp-block-group-is-layout-flex">
-                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M16 3C13.4288 3 10.9154 3.76244 8.77759 5.1909C6.63975 6.61935 4.97351 8.64968 3.98957 11.0251C3.00563 13.4006 2.74819 16.0144 3.2498 18.5362C3.75141 21.0579 4.98953 23.3743 6.80762 25.1924C8.6257 27.0105 10.9421 28.2486 13.4638 28.7502C15.9856 29.2518 18.5995 28.9944 20.9749 28.0104C23.3503 27.0265 25.3807 25.3603 26.8091 23.2224C28.2376 21.0846 29 18.5712 29 16C28.9964 12.5533 27.6256 9.24882 25.1884 6.81163C22.7512 4.37445 19.4467 3.00364 16 3ZM16 27C13.8244 27 11.6977 26.3549 9.88873 25.1462C8.07979 23.9375 6.66989 22.2195 5.83733 20.2095C5.00477 18.1995 4.78693 15.9878 5.21137 13.854C5.63581 11.7202 6.68345 9.7602 8.22183 8.22183C9.76021 6.68345 11.7202 5.6358 13.854 5.21136C15.9878 4.78692 18.1995 5.00476 20.2095 5.83733C22.2195 6.66989 23.9375 8.07979 25.1462 9.88873C26.3549 11.6977 27 13.8244 27 16C26.9967 18.9164 25.8367 21.7123 23.7745 23.7745C21.7123 25.8367 18.9164 26.9967 16 27ZM10 13.5C10 13.2033 10.088 12.9133 10.2528 12.6666C10.4176 12.42 10.6519 12.2277 10.926 12.1142C11.2001 12.0006 11.5017 11.9709 11.7926 12.0288C12.0836 12.0867 12.3509 12.2296 12.5607 12.4393C12.7704 12.6491 12.9133 12.9164 12.9712 13.2074C13.0291 13.4983 12.9994 13.7999 12.8858 14.074C12.7723 14.3481 12.58 14.5824 12.3334 14.7472C12.0867 14.912 11.7967 15 11.5 15C11.1022 15 10.7206 14.842 10.4393 14.5607C10.158 14.2794 10 13.8978 10 13.5ZM22 13.5C22 13.7967 21.912 14.0867 21.7472 14.3334C21.5824 14.58 21.3481 14.7723 21.074 14.8858C20.7999 14.9994 20.4983 15.0291 20.2074 14.9712C19.9164 14.9133 19.6491 14.7704 19.4393 14.5607C19.2296 14.3509 19.0867 14.0836 19.0288 13.7926C18.971 13.5017 19.0007 13.2001 19.1142 12.926C19.2277 12.6519 19.42 12.4176 19.6667 12.2528C19.9133 12.088 20.2033 12 20.5 12C20.8978 12 21.2794 12.158 21.5607 12.4393C21.842 12.7206 22 13.1022 22 13.5ZM21.8663 19.5C20.58 21.7238 18.4413 23 16 23C13.5588 23 11.4213 21.725 10.135 19.5C10.0627 19.3862 10.0141 19.2589 9.99218 19.1258C9.97029 18.9927 9.97555 18.8566 10.0076 18.7256C10.0397 18.5946 10.098 18.4715 10.1789 18.3636C10.2598 18.2557 10.3617 18.1652 10.4785 18.0978C10.5952 18.0303 10.7245 17.9871 10.8583 17.9708C10.9922 17.9546 11.128 17.9655 11.2575 18.0031C11.3871 18.0407 11.5077 18.1041 11.6121 18.1895C11.7164 18.2749 11.8025 18.3805 11.865 18.5C12.7988 20.1138 14.2663 21 16 21C17.7338 21 19.2013 20.1125 20.1338 18.5C20.2664 18.2703 20.4848 18.1026 20.741 18.0339C20.9972 17.9652 21.2703 18.0011 21.5 18.1338C21.7297 18.2664 21.8974 18.4848 21.9661 18.741C22.0348 18.9972 21.9989 19.2703 21.8663 19.5Z" fill="#C7C4C4"></path>
-                                </svg>
-                                <p class="has-grey-300-color has-text-color has-link-color wp-elements-c386469969ae58dec88d92020e39e4c9"> Say hi!</p>
-                            </div>
+                           
 
                             <ul class="wp-block-social-links has-icon-color is-style-logos-only is-layout-flex wp-container-core-social-links-is-layout-65a31c91 wp-block-social-links-is-layout-flex" style="margin-left:var(--wp--preset--spacing--80)">
                                 <li style="color:#C7C4C4;"  class="wp-social-link wp-social-link-linkedin has-grey-300-color wp-block-social-link">
@@ -3557,7 +3527,7 @@ function initMarquee() {
                         </div>
 
                         <p class="has-text-align-right has-grey-300-color has-text-color has-link-color has-16-font-size wp-elements-8619b42bd1a18b7474363b8df2a294d6">
-                             Ⓒ 2025 Goji Labs LLC | <a href="#" data-type="page" data-id="77404">Privacy & Terms</a>
+                             Ⓒ 2025 Sea Birds Digital
                         </p>
 
                         <div class="wp-block-group is-layout-flex wp-container-core-group-is-layout-c5a8d2a1 wp-block-group-is-layout-flex">
@@ -3568,7 +3538,7 @@ function initMarquee() {
                             </p>
 
                             <p class="has-20-font-size">
-                                <a href="#">+1 (213) 787-7640</a>
+                                <a href="#">+1 (213) 123 123 123</a>
                             </p>
                         </div>
                     </div>
