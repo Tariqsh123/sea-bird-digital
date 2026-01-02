@@ -7215,6 +7215,7 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
 @media(max-width:600px){
  .our-services-heading-container h2{
     font-weight: 600;
+    text-align: left;
     font-size: 35px;
 }   
     .our-services-heading-container a {
@@ -7563,17 +7564,32 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
         justify-content: center;
         flex-wrap: nowrap;
     }
-    .point{
-        justify-content:center;
+        .point {
+        justify-content: flex-start;
     }
+    .why-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
 }
 @media(max-width:600px){
     .why-content h2 {
     font-size: 35px;
+    text-align: left;
 }
-    .secondary-btn ,.primary-btn{
-        padding: 10px 10px;
+.point p {
+    font-size: 15px;}
+.why-description {
+    font-size: 15px;
+text-align: left;
+}
+    .secondary-btn, .primary-btn {
+        padding: 5px 10px;
+        font-size: small;
     }
+
 }
 
 
@@ -7700,6 +7716,18 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
     grid-template-columns:1fr;
     gap:60px;
   }
+  .process-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .process-header h2{
+    text-align: left;
+  }
+      .process-header p {
+        text-align: left;
+      }
 }
     /* ===============================
    MOBILE WOW FIX
@@ -7905,11 +7933,16 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
 /* Responsive */
 @media(max-width:768px){
   .faqs-header h2{
+    text-align: left;
     font-size:35px;
+    font-weight: 600;
   }
-  .faq-question{
-    font-size:15px;
-  }
+  .faqs-header p {
+    text-align: left;}
+      .faq-question {
+        font-size: 15px;
+        padding-left: 0;
+    }
   .faq-answer{
     font-size:14px;
   }
@@ -8093,5 +8126,16 @@ label{
     }
     .form-main-container{
         width:100%;
+    }
+}
+
+
+@media(max-width:600px){
+
+    .is-style-page-section-dark, .is-style-page-section-dark .wp-block-heading, .is-style-page-section-dark p:not(.has-link-color) a{
+        text-align: left;
+    }
+    #center-tech-p{
+        text-align: left;
     }
 }
