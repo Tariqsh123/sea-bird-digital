@@ -7333,8 +7333,8 @@ header.wp-block-template-part.is-style-dark-header .wp-block-site-logo {
     top: 50%;
     right: 30px;
     transform: translateY(-50%) scale(0);
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     background-size: cover;
     filter: brightness(100);
     background-position: center;
