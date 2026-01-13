@@ -7939,8 +7939,9 @@ text-align: left;
   .faqs-header p {
     text-align: left;}
       .faq-question {
-        font-size: 15px;
-        padding-left: 0;
+        font-size: 14px;
+        padding: 10px ;
+        /* padding-left: 0; */
     }
   .faq-answer{
     font-size:14px;
